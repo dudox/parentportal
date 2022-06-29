@@ -1,0 +1,500 @@
+/*Page Style*/
+body {
+  font-family: "Raleway", sans-serif;
+  background: transparent linear-gradient(180deg, #ffffff 0%, #f1f8dd 100%) 0%
+    0% no-repeat padding-box;
+}
+
+.wrapper {
+  display: flex;
+  width: 100%;
+  align-items: stretch;
+}
+
+#content {
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  min-height: 100vh;
+  transition: all 0.3s;
+  p {
+    text-align: left;
+    font: normal normal lighter 14px/16px Soleil !important;
+    letter-spacing: 0.16px;
+    color: #525252;
+    opacity: 1;
+  }
+}
+li {
+  margin-bottom: 15px;
+}
+
+/*CSS for the SideBar component*/
+#sidebar {
+  min-width: 250px;
+  max-width: 400px;
+  width: 100%;
+  font-family: "Soleil", sans-serif;
+  transition: all 0.3s;
+  background: transparent linear-gradient(180deg, #b9dd58 0%, #78ab60 100%) 0%
+    0% no-repeat padding-box;
+  opacity: 1;
+
+  .sidebar-header {
+    padding: 5vw 2vw 2vw 4vw;
+    text-align: center;
+    color: White;
+  }
+  .listBottom {
+    position: absolute;
+    bottom: 5px;
+  }
+  ul {
+    margin-top: 70px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    * {
+      margin: 13px 0px;
+    }
+
+    > .sidebar-link {
+      padding: 18px 40px;
+      width: 200px;
+      font: normal normal 500 17px/16px Soleil;
+      letter-spacing: 0.63px;
+      color: #fff;
+      opacity: 1;
+      align-items: center;
+      text-decoration: none;
+    }
+  }
+  .active-link {
+    color: #666764 !important;
+    background-position: 10px 15px;
+  }
+}
+
+/*CSS for cardlayout*/
+
+.cardLayout {
+  border-radius: 20px;
+  border: none;
+}
+
+.childrenCardWrapper {
+  display: flex;
+  font-family: "Raleway", sans-serif;
+  flex-direction: row;
+  padding-left: 6em;
+  padding-right: 6em;
+}
+
+.childrenCardContainer {
+  padding: 6em 6em 0em 6em;
+}
+button {
+  background-color: #ffffff;
+  border-color: #ffffff;
+}
+/*CSS from Headers*/
+.pageTitle {
+  color: #96c15b;
+}
+
+.inviteChild {
+  color: #e6984e;
+  float: right;
+}
+.childrenPageTitle {
+  color: #96c15b;
+  float: left;
+}
+/*Children Container*/
+.childrenCard {
+  width: 20vw;
+  height: 35vw;
+  border-radius: 20px;
+  border-color: #ffffff;
+  text-align: center;
+}
+.inactiveIcon {
+  filter: grayscale(1);
+}
+.btnChildren {
+  color: #e6984e;
+  text-decoration: none;
+}
+/*Card Component CSS*/
+#AppCard {
+  width: 100%;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  box-shadow: 0px 3px 10px #34343429;
+  border-radius: 22px;
+  opacity: 1;
+  margin: 20px 0px;
+}
+/*Need Help CSS*/
+#helpStyle {
+  margin-bottom: 2.1vh;
+  font-family: "Raleway", sans-serif;
+  font-size: 2.7vh;
+  border-radius: 25px;
+  background: #ffffff 0% 0% no-repeat padding-box;
+}
+#helpContent {
+  background: white;
+  color: #96c15b;
+  border-radius: 40px;
+  border: none;
+}
+#links {
+  text-decoration: none;
+  color: #e6984e;
+}
+#arrows {
+  width: 30px;
+  height: 30px;
+  float: right;
+  color: #e6984e;
+}
+/*Email update history css*/
+#historyHeader {
+  color: #b9b9b9;
+  font-family: "Raleway", sans-serif;
+  margin-left: 8vw;
+  margin-top: 3vh;
+}
+#historyTabs {
+  color: #b9b9b9;
+  font-family: "Raleway", sans-serif;
+  background: white;
+  border-radius: 40px;
+  border: none;
+  text-align: left;
+  height: 8vh;
+}
+.btn-lg {
+  font-size: 3.1vh;
+}
+#icon {
+  color: #e6984e;
+}
+#updateCards {
+  margin-top: 3vh;
+  margin-left: 6vh;
+  width: 40vw;
+  height: 40vh;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  box-shadow: 4px 4px 10px #00000029;
+  border-radius: 40px;
+}
+h4 {
+  color: #96c15b;
+  font-family: "Raleway", sans-serif;
+}
+h6 {
+  font-family: "Raleway", sans-serif;
+  margin-bottom: 1.5vh;
+}
+
+/*CSS for cardlayout*/
+
+.cardLayout {
+  border-radius: 20px;
+  border: none;
+}
+
+.childrenCardWrapper {
+  display: flex;
+  font-family: "Raleway", sans-serif;
+  flex-direction: row;
+  padding-left: 6em;
+  padding-right: 6em;
+}
+
+.childrenCardContainer {
+  padding: 6em 6em 0em 6em;
+}
+button {
+  background-color: #ffffff;
+  border-color: #ffffff;
+}
+/*CSS from Headers*/
+.pageTitle {
+  color: #96c15b;
+}
+
+.inviteChild {
+  color: #e6984e;
+  float: right;
+}
+.childrenPageTitle {
+  color: #96c15b;
+  float: left;
+}
+/*Children Container*/
+.childrenCard {
+  width: 20vw;
+  height: 35vw;
+  border-radius: 20px;
+  border-color: #ffffff;
+  text-align: center;
+}
+.inactiveIcon {
+  filter: grayscale(1);
+}
+.btnChildren {
+  color: #e6984e;
+  text-decoration: none;
+}
+/*Card Component CSS*/
+#AppCard {
+  width: 100%;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  box-shadow: 0px 3px 10px #34343429;
+  border-radius: 22px;
+  opacity: 1;
+  margin: 20px 0px;
+}
+
+/*Avatars CSS*/
+.avatarContainer {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 45vw;
+  flex-direction: row;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 35px;
+}
+
+/*Create Children Profile Page CSS*/
+
+.createChildPageContainer {
+  text-align: center;
+}
+.inputFieldContainer input:focus,
+.inputFieldContainer textarea:focus {
+  border: 1px solid #e6984e !important;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  outline-offset: 0px !important;
+  outline: none !important;
+}
+
+.inputField {
+  border-radius: 15px;
+  border: 1px solid #d1d1d1;
+  width: 30vw;
+  height: 3vw;
+}
+
+.checkMark {
+  margin-left: auto;
+  margin-right: auto;
+  border: 2px solid green;
+  border-radius: 30px;
+  display: block;
+  text-align: center;
+}
+.deactivateAlert {
+  color: grey;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+.form-control {
+  box-shadow: none;
+}
+/*See More Info Page CSS */
+.infoContainer {
+  background: #ffffff 0% 0% no-repeat padding-box;
+  box-shadow: 0px 3px 10px #34343429;
+  border-radius: 22px;
+  opacity: 1;
+  margin: 20px 0px;
+}
+.moreInfoIcon {
+  h1 {
+    padding-left: 30px;
+  }
+  padding-left: 10em;
+}
+.infoContainer {
+  display: flex;
+}
+.iconContainer {
+  flex: 1;
+  text-align: center;
+  padding-top: 50px;
+}
+.iconContainer:first-child {
+  margin-right: 20px;
+}
+
+.chartContainer {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 70%;
+}
+
+.moreInfoCharts {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+}
+/*CSS for the profile page*/
+.myProfileContainer {
+  align-items: center;
+  margin-left: 10%;
+  margin-right: 40%;
+}
+.profileContainer {
+  display: flex;
+}
+.emailNotification {
+  max-width: 20vw;
+}
+
+/*CSS for the slider*/
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+.switch {
+  position: relative;
+  float: right;
+  width: 60px;
+  height: 34px;
+}
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: #e99a4e;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #e99a4e;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/*edit personal info page*/
+.updateInfoInputContainer input:focus,
+.updateInfoInputContainer textarea:focus {
+  border: 1px solid #e6984e !important;
+  box-shadow: none;
+}
+
+.updateInfoContainer {
+  margin-left: 20%;
+}
+
+.inputFieldProfile {
+  border-radius: 25px;
+  padding-bottom: 10px;
+}
+
+/*Parent Tools CSSS*/
+.toolTipContainer {
+  background: #ffffff 0% 0% no-repeat padding-box;
+  box-shadow: 0px 3px 10px #34343429;
+  border-radius: 22px;
+  opacity: 1;
+  width: 70%;
+  margin: auto auto auto auto;
+}
+.questions {
+  h3 {
+    color: #96c15b;
+  }
+  padding: 15px 15px 15px 15px;
+}
+ol {
+  list-style-position: inside;
+  padding-left: 15px;
+}
+.questionsLi {
+  width: 80%;
+  border-bottom: 1px solid #00000029;
+  padding-bottom: 15px;
+}
+
+.toolTips {
+  background: #ffffff 0% 0% no-repeat padding-box;
+  box-shadow: 0px 3px 10px #34343429;
+  border-radius: 22px;
+  opacity: 1;
+  width: 70%;
+  margin: auto auto auto auto;
+}
+.contactLi {
+  color: #e99a4e;
+}
+.toolTip {
+  h4 {
+    color: #96c15b;
+    padding: 15px;
+    font-size: 1.8em;
+  }
+  h6 {
+    padding: 15px;
+  }
+}
+.crisisBox {
+  background-color: #96c15b;
+  color: #ffffff;
+  text-align: center;
+  border-radius: 10px;
+  width: 50%;
+  margin: auto;
+}
+.emergency {
+  color: #96c15b;
+  border-bottom: 1px solid #96c15b;
+  width: 70%;
+  padding-left: 15px;
+}
